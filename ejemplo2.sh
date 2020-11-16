@@ -1,6 +1,20 @@
-ls -la | head -n 2
+#!/bin/bash
 
-date
+echo "Ejercicio de bucle"
 
-cal
+for VARIABLE in `ls` ; do
+	If [ -e $VARIABLE ]; then	
+		echo "Existe: $VARIABLE"
+	else
+		echo " No existe $VARIABLE"
+	fi	
+
+done
+
+
+
+
+
+
+
 
